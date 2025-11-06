@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A clean service-based business layout featuring offerings, testimonials, and a quick contact form.">
+  <title>Service Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-service" data-page="service">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Universal Demo</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="site-nav" id="primary-navigation">
+        <a href="index.html" class="nav-link" data-page="home">Home</a>
+        <a href="store.html" class="nav-link" data-page="store">Store Demo</a>
+        <a href="event.html" class="nav-link" data-page="event">Event Demo</a>
+        <a href="service.html" class="nav-link" data-page="service">Service Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-sub">
+      <div class="container flow">
+        <p class="eyebrow">Service demo</p>
+        <h1>Prototype Service Page</h1>
+        <p class="lead">A polished starting point for contractors, trades, and service-based businesses ready to grow online.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="mailto:yourname@example.com">Request a quote</a>
+          <a class="button ghost" href="#services">See offerings</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container grid two-column">
+        <div class="flow">
+          <h2>Services at a glance</h2>
+          <p>Showcase the top services your team delivers. Edit the copy, swap photos, and update pricing tiers as your offerings expand.</p>
+          <ul class="checklist">
+            <li>General Maintenance & seasonal tune-ups.</li>
+            <li>Cleaning, organizing, and decluttering packages.</li>
+            <li>Pickup, delivery, and haul-away support.</li>
+          </ul>
+        </div>
+        <div class="card media-card">
+          <img src="images/demo/service.webp" alt="Team member organizing storage shelves">
+        </div>
+      </div>
+    </section>
+
+    <section class="section highlights">
+      <div class="container grid">
+        <article class="card">
+          <h3>Maintenance Bundles</h3>
+          <p>Bundle recurring visits to keep homes, rentals, or offices in peak condition year-round.</p>
+        </article>
+        <article class="card">
+          <h3>Emergency Visits</h3>
+          <p>Offer rush service with transparent pricing and quick booking options.</p>
+        </article>
+        <article class="card">
+          <h3>Trusted Team</h3>
+          <p>Use this space for certifications, insurance details, or testimonials.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container flow">
+        <h2>Clients notice the difference</h2>
+        <div class="grid">
+          <blockquote class="card quote">
+            <p>&ldquo;Within a week we were taking online bookings and doubled inquiries.&rdquo;</p>
+            <cite>&mdash; Jordan L., Property Manager</cite>
+          </blockquote>
+          <blockquote class="card quote">
+            <p>&ldquo;The site feels like us. It captures our team and makes contacting us effortless.&rdquo;</p>
+            <cite>&mdash; Andrea P., Home Services Owner</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <div class="container flow">
+        <h2>Ready to work together?</h2>
+        <p>Drop a quick note to start your project. We typically respond within one business day.</p>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-grid">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Jane Smith" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+            <label class="full-width">
+              <span>How can we help?</span>
+              <textarea name="message" rows="4" placeholder="Tell us a bit about the project." required></textarea>
+            </label>
+          </div>
+          <button type="submit" class="button primary">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Made by <strong>Your Name</strong> — Local Developer, Red Deer AB</p>
+      <a href="mailto:yourname@example.com" class="footer-link">yourname@example.com</a>
+    </div>
+    <div class="container footer-meta">
+      <small>&copy; <span data-current-year></span> Universal Demo Website. Built to be remixed.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
