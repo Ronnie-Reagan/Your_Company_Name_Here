@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Showcase an upcoming event with clear calls to action, schedule, and sponsor highlights.">
-  <title>Event Prototype</title>
+  <meta name="description" content="Event prototype from the Example Website demo, featuring a full schedule, sponsor grid, and registration CTA.">
+  <title>Event Example | Professional Website Demo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-event" data-page="event">
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">Universal Demo</a>
+      <a class="brand" href="index.html">Example Website</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
         <span class="sr-only">Toggle navigation</span>
         <span class="nav-toggle-bar"></span>
@@ -19,101 +19,123 @@
       </button>
       <nav class="site-nav" id="primary-navigation">
         <a href="index.html" class="nav-link" data-page="home">Home</a>
-        <a href="store.html" class="nav-link" data-page="store">Store Demo</a>
-        <a href="event.html" class="nav-link" data-page="event">Event Demo</a>
-        <a href="service.html" class="nav-link" data-page="service">Service Demo</a>
+        <a href="store.html" class="nav-link" data-page="store">Store Example</a>
+        <a href="event.html" class="nav-link" data-page="event">Event Example</a>
+        <a href="service.html" class="nav-link" data-page="service">Service Example</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero hero-sub">
-      <div class="container flow">
-        <p class="eyebrow">Event demo</p>
-        <h1>Prototype Event Page</h1>
-        <p class="lead">Demonstrate a community gathering, fundraiser, or launch event with a modern, easy-to-scan layout.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="mailto:yourname@example.com?subject=Event%20Registration">Register now</a>
-          <a class="button ghost" href="#schedule">View schedule</a>
+      <div class="container hero-layout" data-animate="fade-up">
+        <div class="hero-copy flow">
+          <p class="eyebrow">Event example</p>
+          <h1>Riverfront Arts Festival</h1>
+          <p class="lead">A weekend celebration with live performances, workshops, food vendors, and curated art installations.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="mailto:donreagan1987@gmail.com?subject=Website%20Contact%20Riverfront%20Arts%20Festival">Register or learn more</a>
+            <a class="button ghost" href="#schedule">View daily schedule</a>
+          </div>
         </div>
+        <aside class="hero-card" data-animate="fade-up" data-animate-delay="140">
+          <div class="hero-card-inner flow">
+            <h2>Festival snapshot</h2>
+            <ul class="hero-highlights">
+              <li>Downtown Riverside Park • June 7–9</li>
+              <li>Three stages, workshop series, and culinary alley</li>
+              <li>Live updates for weather, venue changes, and ticket tiers</li>
+            </ul>
+            <p class="hero-meta">Designed to keep attendees informed before and during the event with clear navigation and timely notices.</p>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" data-animate="fade-up">
       <div class="container event-card">
-        <img src="images/demo/swapmeet.webp" alt="Crowd enjoying a sunny community event">
+        <img src="https://picsum.photos/seed/festival/1200/600" alt="People enjoying an outdoor festival with lights at dusk">
         <div class="event-card-content flow">
-          <h2>Community Swap Meet</h2>
-          <p class="event-meta"><strong>Date:</strong> July 21, 2024 &bull; <strong>Location:</strong> Your Local Community Hall</p>
-          <p>Bring items to trade, connect with neighbours, and support local charities. This template makes it simple to promote the essentials while leaving room for sponsors, maps, or registration links.</p>
+          <h2>Festival overview</h2>
+          <p class="event-meta"><strong>Main stage:</strong> Riverside Pavilion • <strong>Workshop loft:</strong> Warehouse District • <strong>Food court:</strong> Market Street</p>
+          <p>Attendees can browse by day, bookmark activities, and receive updates from mobile notifications. Sponsors, volunteers, and partners each have dedicated sections to highlight their involvement.</p>
           <div class="event-cta">
-            <a class="button primary" href="mailto:yourname@example.com?subject=Swap%20Meet%20Tickets">Get tickets</a>
-            <a class="button small" href="mailto:yourname@example.com?subject=Swap%20Meet%20Vendor%20Inquiry">Become a vendor</a>
+            <a class="button primary" href="mailto:donreagan1987@gmail.com?subject=Website%20Contact%20Riverfront%20Arts%20Festival%20Tickets" data-log="Initiated festival ticket request">Purchase passes</a>
+            <a class="button small" href="mailto:donreagan1987@gmail.com?subject=Website%20Contact%20Festival%20Volunteer%20Inquiry" data-log="Opened volunteer inquiry">Volunteer sign-up</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="schedule">
+    <section class="section" id="schedule" data-animate="fade-up">
       <div class="container grid two-column">
         <div class="flow">
-          <h2>Event schedule</h2>
+          <h2>Daily schedule</h2>
           <ul class="timeline">
             <li>
-              <span class="timeline-time">9:00 AM</span>
+              <span class="timeline-time">Friday</span>
               <div>
-                <h3>Doors open & check-in</h3>
-                <p>Guests drop off swap items, grab coffee, and meet our partner organizations.</p>
+                <h3>Opening Celebration • 6:00 PM</h3>
+                <p>Welcome remarks, outdoor projection show, and performances from regional storytellers.</p>
               </div>
             </li>
             <li>
-              <span class="timeline-time">10:30 AM</span>
+              <span class="timeline-time">Saturday</span>
               <div>
-                <h3>Community giveaways</h3>
-                <p>Prizes sponsored by local businesses, announced by our emcee.</p>
+                <h3>Workshops &amp; Panels • 10:00 AM</h3>
+                <p>Hands-on sessions in printmaking, songwriting, choreography, and youth art hosted across the district.</p>
               </div>
             </li>
             <li>
-              <span class="timeline-time">1:00 PM</span>
+              <span class="timeline-time">Sunday</span>
               <div>
-                <h3>Live music & wrap-up</h3>
-                <p>Enjoy performances, celebrate the impact, and connect with new friends.</p>
+                <h3>Community Finale • 2:00 PM</h3>
+                <p>Collaborative mural unveiling, local chef tastings, and a closing performance by the Riverside Ensemble.</p>
               </div>
             </li>
           </ul>
         </div>
         <aside class="card info-card flow">
-          <h3>What to bring</h3>
+          <h3>On-site resources</h3>
           <ul class="checklist">
-            <li>Gently used goods to swap or donate.</li>
-            <li>Reusable bags for taking items home.</li>
-            <li>A reusable water bottle — hydration station on site.</li>
+            <li>Interactive map with accessible routes and shuttle stops.</li>
+            <li>Push notifications for weather advisories and stage updates.</li>
+            <li>Sponsor lounge details and press credential requests.</li>
           </ul>
-          <a class="button ghost" href="mailto:yourname@example.com?subject=Swap%20Meet%20Poster%20Request">Request event poster</a>
+          <a class="button ghost" href="mailto:donreagan1987@gmail.com?subject=Website%20Contact%20Festival%20Media%20Kit" data-log="Requested media kit">Request media kit</a>
         </aside>
       </div>
     </section>
 
-    <section class="section callout">
+    <section class="section section-alt" data-animate="fade-up">
       <div class="container flow">
-        <h2>Spotlight your sponsors & partners</h2>
-        <p>Use this area to highlight collaborations, charities, or municipal partners supporting the event.</p>
+        <h2>Featured partners</h2>
+        <p>Signature sponsors receive year-round exposure with promotional placements, stories, and recap galleries.</p>
         <div class="grid sponsor-grid">
-          <div class="card sponsor-card">Local Hardware Co.</div>
-          <div class="card sponsor-card">River Valley Credit Union</div>
-          <div class="card sponsor-card">City of Red Deer</div>
+          <div class="card sponsor-card">Everline Cooperative</div>
+          <div class="card sponsor-card">Summit Trail Outfitters</div>
+          <div class="card sponsor-card">Brightside Brew Collective</div>
+          <div class="card sponsor-card">River City Arts Guild</div>
         </div>
+      </div>
+    </section>
+
+    <section class="section callout" data-animate="fade-up">
+      <div class="container flow">
+        <h2>Give attendees a clear guide to the experience.</h2>
+        <p>Pair this event example with live announcements, ticketing, and sponsor promos to keep energy high before opening night.</p>
+        <a class="button primary" href="mailto:donreagan1987@gmail.com">Plan an event walkthrough</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Made by <strong>Your Name</strong> — Local Developer, Red Deer AB</p>
-      <a href="mailto:yourname@example.com" class="footer-link">yourname@example.com</a>
+      <p>Demo website created by an independent developer.</p>
+      <a href="mailto:donreagan1987@gmail.com" class="footer-link">donreagan1987@gmail.com</a>
     </div>
     <div class="container footer-meta">
-      <small>&copy; <span data-current-year></span> Universal Demo Website. Built to be remixed.</small>
+      <small>This is a fictional example site built for demonstration purposes only. All content is generic.</small>
     </div>
   </footer>
 

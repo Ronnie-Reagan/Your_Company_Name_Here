@@ -41,7 +41,7 @@
 
     document.addEventListener("click", (event) => {
       const target = event.target;
-      if (!target) return;
+      if (!(target instanceof Element)) return;
       const insideNav = nav.contains(target);
       const isToggle = navToggle.contains(target);
       if (!insideNav && !isToggle) {
@@ -64,8 +64,58 @@
     });
   }
 
+  body.classList.add("is-loaded");
+
+  const animatedElements = document.querySelectorAll("[data-animate]");
+  if (animatedElements.length) {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    const reveal = (element) => {
+      const delayAttr = element.getAttribute("data-animate-delay");
+      if (delayAttr != null) {
+        const delay = Number.parseInt(delayAttr, 10);
+        if (!Number.isNaN(delay)) {
+          element.style.transitionDelay = `${delay}ms`;
+        }
+      }
+      element.classList.add("is-visible");
+    };
+
+    if (typeof IntersectionObserver === "undefined" || prefersReducedMotion.matches) {
+      animatedElements.forEach((element) => {
+        reveal(element);
+      });
+    } else {
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              reveal(entry.target);
+              obs.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.15,
+          rootMargin: "0px 0px -40px 0px",
+        }
+      );
+
+      animatedElements.forEach((element) => {
+        observer.observe(element);
+      });
+    }
+  }
+
   const yearTarget = document.querySelector("[data-current-year]");
   if (yearTarget) {
     yearTarget.textContent = new Date().getFullYear();
   }
+
+  document.querySelectorAll("[data-log]").forEach((element) => {
+    element.addEventListener("click", () => {
+      const message = element.getAttribute("data-log") || "Demo interaction triggered";
+      console.log(`Demo interaction: ${message}`);
+    });
+  });
 })();

@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Preview a flexible storefront layout built to showcase products, promotions, and small business personality.">
-  <title>Store Prototype</title>
+  <meta name="description" content="Store prototype from the Example Website demo, featuring products, merchandising, and customer highlights.">
+  <title>Store Example | Professional Website Demo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-store" data-page="store">
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">Universal Demo</a>
+      <a class="brand" href="index.html">Example Website</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
         <span class="sr-only">Toggle navigation</span>
         <span class="nav-toggle-bar"></span>
@@ -19,97 +19,121 @@
       </button>
       <nav class="site-nav" id="primary-navigation">
         <a href="index.html" class="nav-link" data-page="home">Home</a>
-        <a href="store.html" class="nav-link" data-page="store">Store Demo</a>
-        <a href="event.html" class="nav-link" data-page="event">Event Demo</a>
-        <a href="service.html" class="nav-link" data-page="service">Service Demo</a>
+        <a href="store.html" class="nav-link" data-page="store">Store Example</a>
+        <a href="event.html" class="nav-link" data-page="event">Event Example</a>
+        <a href="service.html" class="nav-link" data-page="service">Service Example</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero hero-sub">
-      <div class="container flow">
-        <p class="eyebrow">Store demo</p>
-        <h1>Prototype Store Page</h1>
-        <p class="lead">A curated storefront template for thrift, retail, or consignment businesses who need a professional home fast.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="mailto:yourname@example.com">Plan your online shop</a>
-          <a class="button ghost" href="index.html">Return to overview</a>
+      <div class="container hero-layout" data-animate="fade-up">
+        <div class="hero-copy flow">
+          <p class="eyebrow">Store example</p>
+          <h1>Local Goods Collective</h1>
+          <p class="lead">A polished storefront demo showcasing seasonal products, shopper favorites, and merchandising callouts.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#featured-items">Browse featured products</a>
+            <a class="button ghost" href="mailto:donreagan1987@gmail.com?subject=Website%20Contact">Ask about retail builds</a>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container flow">
-        <h2>Featured Items</h2>
-        <p>Highlight new arrivals, seasonal collections, or best sellers. Swap in product photography, pricing, and links in seconds.</p>
-        <div class="grid store-grid">
-          <article class="card product">
-            <img src="images/demo/mug.webp" alt="Sample handmade product on display">
-            <div class="product-content flow">
-              <h3>Signature Handmade Mug</h3>
-              <p class="price">$24.00</p>
-              <p>Use this space to call out materials, standout features, or limited availability.</p>
-              <button type="button" class="button small">Add to cart</button>
-            </div>
-          </article>
-          <article class="card product">
-            <img src="images/demo/vintagedenim.webp" alt="Vintage denim jacket displayed on a hanger">
-            <div class="product-content flow">
-              <h3>Vintage Denim Jacket</h3>
-              <p class="price">$68.00</p>
-              <p>Perfect for showcasing your second-hand finds or curated wardrobe staples.</p>
-              <button type="button" class="button small">Add to cart</button>
-            </div>
-          </article>
-          <article class="card product">
-            <img src="images/demo/vintagevinyl.webp" alt="Collection of vinyl records in sleeves">
-            <div class="product-content flow">
-              <h3>Classic Vinyl Record</h3>
-              <p class="price">$18.00</p>
-              <p>Describe the era, genre, or story behind each item to connect with collectors.</p>
-              <button type="button" class="button small">Add to cart</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section store-details">
-      <div class="container grid two-column">
-        <div class="flow">
-          <h2>Bring your in-store experience online</h2>
-          <p>Capture the personality of your shop with welcoming copy, curated photography, and promotional callouts.</p>
-          <ul class="feature-list">
-            <li><strong>Flexible cards:</strong> Swap prices, photos, and labels in one place.</li>
-            <li><strong>Promotion ribbons:</strong> Highlight sales or limited drops with accent colors.</li>
-            <li><strong>Trust signals:</strong> Layer in testimonials, delivery details, or pickup instructions.</li>
-          </ul>
-        </div>
-        <aside class="card info-card flow">
-          <h3>Need online ordering?</h3>
-          <p>Integrate with Shopify, Square, or your preferred platform. This layout provides the polished front-end to plug in your system of choice.</p>
-          <a class="button primary" href="mailto:yourname@example.com">Request a proposal</a>
+        <aside class="hero-card" data-animate="fade-up" data-animate-delay="140">
+          <div class="hero-card-inner flow">
+            <h2>Store snapshot</h2>
+            <ul class="hero-highlights">
+              <li>Inventory-ready product grid with pricing</li>
+              <li>Room for pickup, delivery, or loyalty details</li>
+              <li>Callouts that can feature promotions or events</li>
+            </ul>
+            <p class="hero-meta">Checkout and inventory integrations can be layered in as needed without changing the layout.</p>
+          </div>
         </aside>
       </div>
     </section>
 
-    <section class="section callout">
+    <section class="section" id="featured-items" data-animate="fade-up">
       <div class="container flow">
-        <h2>Let customers browse before they visit</h2>
-        <p>Give shoppers a taste of your brand experience and convert casual browsers into repeat customers.</p>
-        <a class="button ghost" href="service.html">Explore service layout</a>
+        <h2>Featured products</h2>
+        <p>Curated selections rotate each week, blending handcrafted goods with everyday essentials. Click any button to simulate an add-to-cart action.</p>
+        <div class="grid store-grid">
+          <article class="card product">
+            <img src="https://picsum.photos/seed/mug/800/540" alt="Handcrafted ceramic mug on a maple tray">
+            <div class="product-content flow">
+              <h3>Stone Ridge Mug</h3>
+              <p class="price">$24</p>
+              <p>Hand-thrown ceramic piece with a soft matte glaze and ergonomic handle, perfect for drip or pour-over coffee.</p>
+              <button type="button" class="button small" data-log="Added Stone Ridge Mug to cart">Add to cart</button>
+            </div>
+          </article>
+          <article class="card product">
+            <img src="https://picsum.photos/seed/blanket/800/540" alt="Folded wool blanket on a wooden bench">
+            <div class="product-content flow">
+              <h3>Harvest Wool Throw</h3>
+              <p class="price">$118</p>
+              <p>Locally milled wool with a reversible pattern and braided fringe, ideal for sofa styling or patio evenings.</p>
+              <button type="button" class="button small" data-log="Added Harvest Wool Throw to cart">Add to cart</button>
+            </div>
+          </article>
+          <article class="card product">
+            <img src="https://picsum.photos/seed/coffee/800/540" alt="Bag of coffee beans beside scattered coffee">
+            <div class="product-content flow">
+              <h3>Morning Market Roast</h3>
+              <p class="price">$18</p>
+              <p>Medium roast beans sourced from small farms with tasting notes of caramel, citrus zest, and cocoa.</p>
+              <button type="button" class="button small" data-log="Added Morning Market Roast to cart">Add to cart</button>
+            </div>
+          </article>
+          <article class="card product">
+            <img src="https://picsum.photos/seed/plant/800/540" alt="Collection of potted herbs on a shelf">
+            <div class="product-content flow">
+              <h3>Kitchen Herb Trio</h3>
+              <p class="price">$32</p>
+              <p>Ready-to-grow basil, mint, and rosemary in matte ceramic planters with tips for indoor sunlight placement.</p>
+              <button type="button" class="button small" data-log="Added Kitchen Herb Trio to cart">Add to cart</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" data-animate="fade-up">
+      <div class="container flow">
+        <h2>Customer favorites</h2>
+        <div class="grid trio">
+          <article class="card">
+            <h3>Weekend Gift Sets</h3>
+            <p>Curated bundles feature small-batch pantry goods, stationery, and textiles — ideal for host gifts and celebrations.</p>
+          </article>
+          <article class="card">
+            <h3>Refill Bar</h3>
+            <p>Guests bring clean containers to refill soaps, cleaners, and pantry staples, cutting down on packaging.</p>
+          </article>
+          <article class="card">
+            <h3>Neighbors&apos; Picks</h3>
+            <p>Monthly display highlighting products from local vendors with short stories about their craft.</p>
+          </article>
+        </div>
+        <p class="note">Need checkout, delivery, or loyalty tracking? Those features can be connected behind the scenes without changing the layout.</p>
+      </div>
+    </section>
+
+    <section class="section callout" data-animate="fade-up">
+      <div class="container flow">
+        <h2>Show what your shelves look like online.</h2>
+        <p>Use this store example during meetings to help owners visualize merchandising, seasonal campaigns, and pickup workflows.</p>
+        <a class="button primary" href="mailto:donreagan1987@gmail.com?subject=Website%20Contact">Discuss retail options</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Made by <strong>Your Name</strong> — Local Developer, Red Deer AB</p>
-      <a href="mailto:yourname@example.com" class="footer-link">yourname@example.com</a>
+      <p>Demo website created by an independent developer.</p>
+      <a href="mailto:donreagan1987@gmail.com?subject=Website%20Contact" class="footer-link">donreagan1987@gmail.com</a>
     </div>
     <div class="container footer-meta">
-      <small>&copy; <span data-current-year></span> Universal Demo Website. Built to be remixed.</small>
+      <small>This is a fictional example site built for demonstration purposes only. All content is generic.</small>
     </div>
   </footer>
 

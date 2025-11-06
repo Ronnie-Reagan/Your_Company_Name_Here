@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A clean service-based business layout featuring offerings, testimonials, and a quick contact form.">
-  <title>Service Prototype</title>
+  <meta name="description" content="Service prototype from the Example Website demo, featuring offerings, testimonials, and a quote request form.">
+  <title>Service Example | Professional Website Demo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-service" data-page="service">
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">Universal Demo</a>
+      <a class="brand" href="index.html">Example Website</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
         <span class="sr-only">Toggle navigation</span>
         <span class="nav-toggle-bar"></span>
@@ -19,108 +19,126 @@
       </button>
       <nav class="site-nav" id="primary-navigation">
         <a href="index.html" class="nav-link" data-page="home">Home</a>
-        <a href="store.html" class="nav-link" data-page="store">Store Demo</a>
-        <a href="event.html" class="nav-link" data-page="event">Event Demo</a>
-        <a href="service.html" class="nav-link" data-page="service">Service Demo</a>
+        <a href="store.html" class="nav-link" data-page="store">Store Example</a>
+        <a href="event.html" class="nav-link" data-page="event">Event Example</a>
+        <a href="service.html" class="nav-link" data-page="service">Service Example</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero hero-sub">
-      <div class="container flow">
-        <p class="eyebrow">Service demo</p>
-        <h1>Prototype Service Page</h1>
-        <p class="lead">A polished starting point for contractors, trades, and service-based businesses ready to grow online.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="mailto:yourname@example.com">Request a quote</a>
-          <a class="button ghost" href="#services">See offerings</a>
+      <div class="container hero-layout" data-animate="fade-up">
+        <div class="hero-copy flow">
+          <p class="eyebrow">Service example</p>
+          <h1>Brightcare Home Services</h1>
+          <p class="lead">A trustworthy digital presence for residential maintenance, repairs, and seasonal support across the city.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#services">See core services</a>
+            <a class="button ghost" href="#quote">Request a quote</a>
+          </div>
         </div>
+        <aside class="hero-card" data-animate="fade-up" data-animate-delay="140">
+          <div class="hero-card-inner flow">
+            <h2>Why clients choose us</h2>
+            <ul class="hero-highlights">
+              <li>Responsive scheduling with text and email updates</li>
+              <li>Insured technicians with background checks</li>
+              <li>Detailed follow-up reports after every visit</li>
+            </ul>
+            <p class="hero-meta">This example shows how clear service tiers, testimonials, and conversion forms all work together.</p>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section class="section" id="services">
+    <section class="section" id="services" data-animate="fade-up">
       <div class="container grid two-column">
         <div class="flow">
           <h2>Services at a glance</h2>
-          <p>Showcase the top services your team delivers. Edit the copy, swap photos, and update pricing tiers as your offerings expand.</p>
+          <p>Customers can pick from bundled plans or one-time visits. Pricing tiers and seasonal promos can be added beneath each item.</p>
           <ul class="checklist">
-            <li>General Maintenance & seasonal tune-ups.</li>
-            <li>Cleaning, organizing, and decluttering packages.</li>
-            <li>Pickup, delivery, and haul-away support.</li>
+            <li>Quarterly whole-home maintenance covering HVAC, plumbing, and electrical safety checks.</li>
+            <li>Deep cleaning, organization, and move-in refresh services tailored to busy households.</li>
+            <li>Pickup, delivery, and installation for appliances, furniture, and exterior fixtures.</li>
           </ul>
         </div>
         <div class="card media-card">
-          <img src="images/demo/service.webp" alt="Team member organizing storage shelves">
+          <img src="https://picsum.photos/seed/service/900/640" alt="Technicians reviewing a maintenance checklist inside a modern home">
         </div>
       </div>
     </section>
 
-    <section class="section highlights">
-      <div class="container grid">
+    <section class="section highlights" data-animate="fade-up">
+      <div class="container grid trio">
         <article class="card">
-          <h3>Maintenance Bundles</h3>
-          <p>Bundle recurring visits to keep homes, rentals, or offices in peak condition year-round.</p>
+          <h3>Verified Professionals</h3>
+          <p>Every specialist is licensed, insured, and introduced with a profile so customers know who is arriving.</p>
         </article>
         <article class="card">
-          <h3>Emergency Visits</h3>
-          <p>Offer rush service with transparent pricing and quick booking options.</p>
+          <h3>Transparent Scheduling</h3>
+          <p>Online booking ties directly into dispatch, sending confirmations, reminders, and estimated arrival windows.</p>
         </article>
         <article class="card">
-          <h3>Trusted Team</h3>
-          <p>Use this space for certifications, insurance details, or testimonials.</p>
+          <h3>Care Plan Reports</h3>
+          <p>After each visit, clients receive a checklist, care tips, and recommended follow-up dates for peace of mind.</p>
         </article>
       </div>
     </section>
 
-    <section class="section testimonials">
+    <section class="section testimonials" data-animate="fade-up">
       <div class="container flow">
         <h2>Clients notice the difference</h2>
-        <div class="grid">
+        <div class="grid testimonial-grid">
           <blockquote class="card quote">
-            <p>&ldquo;Within a week we were taking online bookings and doubled inquiries.&rdquo;</p>
-            <cite>&mdash; Jordan L., Property Manager</cite>
+            <p>&ldquo;Booking took less than five minutes and the team arrived on time with every detail covered.&rdquo;</p>
+            <cite>&mdash; Homeowner, West District</cite>
           </blockquote>
           <blockquote class="card quote">
-            <p>&ldquo;The site feels like us. It captures our team and makes contacting us effortless.&rdquo;</p>
-            <cite>&mdash; Andrea P., Home Services Owner</cite>
+            <p>&ldquo;The follow-up report included photos, maintenance tips, and next steps — exactly what we needed.&rdquo;</p>
+            <cite>&mdash; Condo Board, River District</cite>
           </blockquote>
         </div>
       </div>
     </section>
 
-    <section class="section contact">
+    <section class="section contact" id="quote" data-animate="fade-up">
       <div class="container flow">
-        <h2>Ready to work together?</h2>
-        <p>Drop a quick note to start your project. We typically respond within one business day.</p>
-        <form class="contact-form" action="#" method="post">
+        <h2>Request a quote</h2>
+        <p>Complete the form below to simulate a quote request. Messages are routed to the public demo inbox for presentation purposes.</p>
+        <form class="contact-form" action="mailto:donreagan1987@gmail.com?subject=Website%20Contact" method="post" enctype="text/plain">
           <div class="form-grid">
             <label>
               <span>Name</span>
-              <input type="text" name="name" placeholder="Jane Smith" required>
+              <input type="text" name="name" placeholder="Alex Morgan" required>
             </label>
             <label>
               <span>Email</span>
               <input type="email" name="email" placeholder="you@example.com" required>
             </label>
+            <label>
+              <span>Preferred date</span>
+              <input type="text" name="date" placeholder="e.g., Next Wednesday" required>
+            </label>
             <label class="full-width">
-              <span>How can we help?</span>
-              <textarea name="message" rows="4" placeholder="Tell us a bit about the project." required></textarea>
+              <span>Project details</span>
+              <textarea name="message" rows="4" placeholder="Briefly describe the maintenance or project you have in mind." required></textarea>
             </label>
           </div>
-          <button type="submit" class="button primary">Send message</button>
+          <button type="submit" class="button primary" data-log="Submitted service quote form">Send request</button>
         </form>
+        <p class="note">Prefer a direct email? Reach out at <a href="mailto:donreagan1987@gmail.com?subject=Website%20Contact">donreagan1987@gmail.com</a>.</p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Made by <strong>Your Name</strong> — Local Developer, Red Deer AB</p>
-      <a href="mailto:yourname@example.com" class="footer-link">yourname@example.com</a>
+      <p>Demo website created by an independent developer.</p>
+      <a href="mailto:donreagan1987@gmail.com?subject=Website%20Contact" class="footer-link">donreagan1987@gmail.com</a>
     </div>
     <div class="container footer-meta">
-      <small>&copy; <span data-current-year></span> Universal Demo Website. Built to be remixed.</small>
+      <small>This is a fictional example site built for demonstration purposes only. All content is generic.</small>
     </div>
   </footer>
 

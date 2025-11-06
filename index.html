@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A polished website starter showing how quickly your brand can launch a professional online presence.">
-  <title>Universal Demo Website</title>
+  <meta name="description" content="A finished multi-page example website demonstrating professional layouts for local businesses.">
+  <title>Professional Website Example</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-home" data-page="home">
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">Universal Demo</a>
+      <a class="brand" href="index.html">Example Website</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
         <span class="sr-only">Toggle navigation</span>
         <span class="nav-toggle-bar"></span>
@@ -19,75 +19,122 @@
       </button>
       <nav class="site-nav" id="primary-navigation">
         <a href="index.html" class="nav-link" data-page="home">Home</a>
-        <a href="store.html" class="nav-link" data-page="store">Store Demo</a>
-        <a href="event.html" class="nav-link" data-page="event">Event Demo</a>
-        <a href="service.html" class="nav-link" data-page="service">Service Demo</a>
+        <a href="store.html" class="nav-link" data-page="store">Store Example</a>
+        <a href="event.html" class="nav-link" data-page="event">Event Example</a>
+        <a href="service.html" class="nav-link" data-page="service">Service Example</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero hero-home">
-      <div class="container flow">
-        <p class="eyebrow">Launch-ready starter</p>
-        <h1>Universal Demo Website</h1>
-        <p class="lead">A polished showcase that proves how quickly your business, non-profit, or side hustle can launch a modern web presence.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="store.html">See the Store Layout</a>
-          <a class="button ghost" href="service.html">Preview Services</a>
+      <div class="container hero-layout" data-animate="fade-up">
+        <div class="hero-copy flow">
+          <p class="eyebrow">Finished demo</p>
+          <h1>Professional Website Example</h1>
+          <p class="lead">A complete demo of what your business website could look like. Explore three polished experiences for stores, events, and service providers.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#examples">View the examples below</a>
+            <a class="button ghost" href="mailto:donreagan1987@gmail.com?subject=Website%20Contact">Contact for a walkthrough</a>
+          </div>
         </div>
-        <p class="hero-note">Fully customizable and built with clean HTML, CSS, and a sprinkle of JavaScript.</p>
+        <div class="hero-card" data-animate="fade-up" data-animate-delay="140">
+          <div class="hero-card-inner flow">
+            <h2>Highlights in this demo</h2>
+            <ul class="hero-highlights">
+              <li>Responsive layouts for any screen size</li>
+              <li>Clear navigation and focused messaging</li>
+              <li>Consistent branding across every page</li>
+            </ul>
+            <p class="hero-meta">Use this live site to show prospects exactly how a professional build can look and feel.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section why">
+    <section class="section" data-animate="fade-up">
       <div class="container flow">
-        <h2>Why This Exists</h2>
-        <p>This demo highlights flexible layouts for any organization. Swap in your words, colors, and photos — the structure is already optimized for clarity and speed.</p>
-        <ul class="feature-list">
-          <li><strong>Made for mobile first.</strong> Every layout naturally adapts to phones, tablets, and desktops.</li>
-          <li><strong>Built to customize.</strong> Update copy, buttons, and imagery without chasing down a developer.</li>
-          <li><strong>Extensible foundation.</strong> Layer on e-commerce, forms, analytics, or booking tools whenever you need them.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section features">
-      <div class="container">
-        <h2>Highlights</h2>
-        <div class="grid">
-          <div class="card">
+        <h2>What this system demonstrates</h2>
+        <div class="grid trio">
+          <article class="card service-card">
             <h3>Responsive</h3>
-            <p>Looks sharp on every screen size, engineered with modern CSS layout techniques.</p>
-          </div>
-          <div class="card">
+            <p>Each page adapts to phones, tablets, and desktops with thoughtful spacing, readable type, and touch-friendly navigation.</p>
+          </article>
+          <article class="card service-card">
             <h3>Editable</h3>
-            <p>Plain-language HTML and CSS that any content editor can understand and update.</p>
-          </div>
-          <div class="card">
+            <p>Content blocks are structured with plain HTML, making it easy to swap in real copy, imagery, and calls to action.</p>
+          </article>
+          <article class="card service-card">
             <h3>Expandable</h3>
-            <p>Add galleries, contact forms, or integrations as your needs evolve.</p>
-          </div>
+            <p>Sections are organized so you can add forms, inventory, ticketing, or scheduling tools without redesigning the site.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section callout">
+    <section id="examples" class="section section-alt" data-animate="fade-up">
       <div class="container flow">
-        <h2>Ready for your brand?</h2>
-        <p>Swap in your colors, typography, and visuals. The starting groundwork is already complete.</p>
-        <a class="button primary" href="mailto:yourname@example.com">Book a consultation</a>
+        <h2>Three complete examples</h2>
+        <p>These pages are finished mockups ready to demo for any local business owner. Open each to explore the full layout and tone.</p>
+        <div class="grid case-grid">
+          <a class="card case-card" href="store.html">
+            <span class="case-tag">Store</span>
+            <h3>Neighborhood Shopfront</h3>
+            <p>Product listings, customer favorites, and merchandising callouts styled for a cozy retail business.</p>
+            <span class="case-link">Open the store example</span>
+          </a>
+          <a class="card case-card" href="event.html">
+            <span class="case-tag">Event</span>
+            <h3>Community Gathering</h3>
+            <p>Hero imagery, daily schedule, and sponsor highlights planned for a seasonal arts fair.</p>
+            <span class="case-link">Open the event example</span>
+          </a>
+          <a class="card case-card" href="service.html">
+            <span class="case-tag">Service</span>
+            <h3>Home Services Team</h3>
+            <p>Service list, testimonials, and a quote request form designed to build trust fast.</p>
+            <span class="case-link">Open the service example</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-animate="fade-up">
+      <div class="container flow process">
+        <h2>How to use this demo</h2>
+        <ol class="process-list">
+          <li>
+            <h3>Walk-through ready</h3>
+            <p>Load any page on a tablet or laptop and guide prospects section by section, just like a finished project.</p>
+          </li>
+          <li>
+            <h3>Swap in real assets</h3>
+            <p>Replace placeholder imagery and copy with a client&apos;s content to present a customized preview.</p>
+          </li>
+          <li>
+            <h3>Extend when needed</h3>
+            <p>Add integrations such as checkout, ticketing, or scheduling while preserving the visual system.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section callout" data-animate="fade-up">
+      <div class="container flow">
+        <h2>Ready to demonstrate a polished online presence?</h2>
+        <p>Use this example site in meetings or send the link ahead of time so decision makers can explore every page.</p>
+        <a class="button primary" href="mailto:donreagan1987@gmail.com?subject=Website%20Contact">Request a guided tour</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Made by <strong>Your Name</strong> — Local Developer, Red Deer AB</p>
-      <a href="mailto:yourname@example.com" class="footer-link">yourname@example.com</a>
+      <p>Demo website created by an independent developer.</p>
+      <a href="mailto:donreagan1987@gmail.com?subject=Website%20Contact" class="footer-link">donreagan1987@gmail.com</a>
     </div>
     <div class="container footer-meta">
-      <small>&copy; <span data-current-year></span> Universal Demo Website. Built to be remixed.</small>
+      <small>This is a fictional example site built for demonstration purposes only. All content is generic.</small>
     </div>
   </footer>
 
