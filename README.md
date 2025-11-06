@@ -7,7 +7,7 @@ but I’m also open to larger, more experimental work **if you understand the ri
 
 ---
 
-## 🧩 Static Pages — $60 – $150
+## Static Pages — $60 – $150
 Basic websites hosted for free on **GitHub Pages** (no monthly fees).
 
 **Includes**
@@ -25,7 +25,7 @@ Basic websites hosted for free on **GitHub Pages** (no monthly fees).
 
 ---
 
-## ⚙️ Web-App Prototypes — $250 – $800
+## Web-App Prototypes — $250 – $800
 Interactive mockups or demo apps showing how an idea could work.
 
 **Includes**
@@ -38,7 +38,7 @@ Interactive mockups or demo apps showing how an idea could work.
 
 ---
 
-## 💻 Full Web or Desktop Applications — $1 000 – $3 000+
+## Full Web or Desktop Applications — $1 000 – $3 000+
 Available **only if you’re okay with me still learning** and understand that  
 results may not meet agency-level standards.
 
@@ -53,13 +53,13 @@ results may not meet agency-level standards.
 
 ---
 
-## 🔧 Maintenance & Small Changes
+## Maintenance & Small Changes
 - Minor edit / fix: $20 – $40  
 - Major rework or feature addition: $60 /hr  
 
 ---
 
-## 🤝 Transparency
+## Transparency
 I’ve made **many sites and apps** — some polished, some rough — and I’m honest about both.  
 If you want someone affordable, fast, and direct, I’m a good fit.  
 If you need a corporate-grade result, I’m not there *yet*, but I’ll give it my best shot.
